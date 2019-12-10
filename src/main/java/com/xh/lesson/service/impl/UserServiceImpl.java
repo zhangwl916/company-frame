@@ -149,27 +149,25 @@ public class UserServiceImpl implements UserService {
             log.error("传入 的 id:{}不合法",vo.getId());
             throw new BusinessException(BaseResponseCode.DATA_ERROR);
         }
-        SysUser update=new SysUser();
-        BeanUtils.copyProperties(vo,update);
-        update.setUpdateTime(new Date());
+        BeanUtils.copyProperties(vo,sysUser);
+        sysUser.setUpdateTime(new Date());
         if(!StringUtils.isEmpty(vo.getPassword())){
             String newPassword=PasswordUtils.encode(vo.getPassword(),sysUser.getSalt());
-            update.setPassword(newPassword);
+            sysUser.setPassword(newPassword);
+        }else {
+            sysUser.setPassword(null);
         }
-        update.setUpdateId(operationId);
-       int count= sysUserMapper.updateByPrimaryKeySelective(update);
-       if (count!=1){
-           throw new BusinessException(BaseResponseCode.OPERATION_ERRO);
-       }
-       setUserOwnRole(sysUser.getId(),vo.getRoleIds());
-
-       if(sysUser.getStatus()!=update.getStatus()){
-           if(update.getStatus()==2){
-               redisService.set(Constant.ACCOUNT_LOCK_KEY+sysUser.getId(),sysUser.getId());
-           }else {
-               redisService.delete(Constant.ACCOUNT_LOCK_KEY+sysUser.getId());
-           }
-       }
+        sysUser.setUpdateId(operationId);
+        int count= sysUserMapper.updateByPrimaryKeySelective(sysUser);
+        if (count!=1){
+            throw new BusinessException(BaseResponseCode.OPERATION_ERRO);
+        }
+        setUserOwnRole(sysUser.getId(),vo.getRoleIds());
+        if(vo.getStatus()==2){
+            redisService.set(Constant.ACCOUNT_LOCK_KEY+sysUser.getId(),sysUser.getId());
+        }else {
+            redisService.delete(Constant.ACCOUNT_LOCK_KEY+sysUser.getId());
+        }
 
     }
 
