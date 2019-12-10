@@ -43,10 +43,10 @@
 
 ####  还提供了配套视频讲解
 #####手机扫码试看
-![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/16.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/16.jpg) 
 
 [获取视频](http://i.xue.taobao.com/detail.htm?spm=a2174.7765247.0.0.KXDWYJ&courseId=116855)
 
-![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/13.JPG) 
-![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/14.JPG)
-![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/15.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/13.jpg) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/14.jpg)
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/15.jpg) 
