@@ -1,37 +1,52 @@
 # company-frame
 
 #### 介绍
-springboot2.0+shiro+jwt+layui+thymeleaf+swagger+mybatis后台权限管理系统前后端分离。 权限控制的方式为 RBAC。代码通熟易懂 、JWT（无状态token）过期自动刷新，数据全程 ajax 获取，封装 ajax 工具类、菜单无线层级展示，解决 layui.tree 树形组件，回显问题。数据交互都是以 JSON 格式交互。后台接口RESTful 风格，支持前后端分离，app公用一套接口。 
+基于spring boot 2.16、shiro、jwt、redis、swagger2、mybatis 、thymeleaf、layui 后台管理系统， 权限控制的方式为 RBAC。代码通熟易懂 、JWT（无状态token）过期自动刷新，数据全程 ajax 获取，封装 ajax 工具类、菜单无线层级展示，解决 layui.tree 树形组件，回显问题。数据交互都是以 JSON 格式交互。后台接口RESTful 风格，支持前后端分离，app公用一套接口。 
 
 #### 软件架构
 软件架构说明
+* 核心框架：spring boot 2.1.6
+* 持久层框架：mybatis
+* 数据库连接池：alibaba druid
+* 安全框架：apache shiro
+* 无状态 JWT
+* 缓存框架：redis(自定义 RedisTemplate 序列化)
+* 日志框架：logback
+* 接口文档：swagger 2.9.2
+* 前端模板：thymeleaf+layui2x
+
+#### **部署**
+
+- 下载redis 启动redis
+- 创建company_frame数据库
+- 导入company_frame.sql
+- 启动项目
+- 接口文档访问 http://localhost:8080/swagger-ui.html#/
+- 登录地址 http://localhost:8080/index/login
+- 登录密码 都是 666666
+
+#### 效果展示
+
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/1.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/2.JPG)
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/4.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/5.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/6.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/7.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/8.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/9.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/10.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/11.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/12.JPG)  
 
 
-#### 安装教程
+####  还提供了配套视频讲解
+#####手机扫码试看
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/16.JPG) 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+[获取视频](http://i.xue.taobao.com/detail.htm?spm=a2174.7765247.0.0.KXDWYJ&courseId=116855)
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/13.JPG) 
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/14.JPG)
+![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/15.JPG) 
