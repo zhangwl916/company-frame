@@ -69,7 +69,7 @@
             $.each(item,function (index,child) {
                 if(child.children !=null&& child.children.length>0){
                     ulHtml +='<a>'+child.title+'</a>';
-                    ulHtml +=getchild(child.children,"");
+                    ulHtml +=getChild(child.children,"");
                 }else {
                     ulHtml += '<dd><a href="javascript:;" data-url="'+child.url+'" data-title="'+child.title+'" data-id="'+child.id+'" class="menuNvaBar">';
                     ulHtml += '<cite>'+child.title+'</cite></a></dd>';
