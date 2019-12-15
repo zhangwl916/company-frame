@@ -30,7 +30,7 @@
 ##### 手机扫码观看
 ![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/16.jpg) 
 
-[获取视频](http://i.xue.taobao.com/detail.htm?spm=a2174.7765247.0.0.KXDWYJ&courseId=116855)
+[获取视频](https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.4bf61debIaDnFg&ft=t&id=608067900908)
 
 ![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/15.jpg) 
 ![](https://gitee.com/yingxue985/company-frame/raw/master/src/main/resources/static/images/class/13.jpg) 
