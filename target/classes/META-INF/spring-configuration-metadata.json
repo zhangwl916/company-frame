@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "com.xh.lesson.utils.TokenSettings",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.access-token-expire-time",
+      "type": "java.time.Duration",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    },
+    {
+      "name": "jwt.issuer",
+      "type": "java.lang.String",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    },
+    {
+      "name": "jwt.refresh-token-expire-app-time",
+      "type": "java.time.Duration",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    },
+    {
+      "name": "jwt.refresh-token-expire-time",
+      "type": "java.time.Duration",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    },
+    {
+      "name": "jwt.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.xh.lesson.utils.TokenSettings"
+    }
+  ],
+  "hints": []
+}
